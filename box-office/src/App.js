@@ -16,7 +16,7 @@ const App =() => {
 
 
 const getMovieRequest = async(searchValue) => {
-  const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=607e47e`
+  const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=607e47e`
   const response = await fetch(url);
   const responseJson = await response.json();
 
@@ -26,7 +26,7 @@ const getMovieRequest = async(searchValue) => {
 }
 const openPopup = async(id) => {
 
-    const url2 = `http://www.omdbapi.com/?i=${id}&apikey=607e47e`  
+    const url2 = `https://www.omdbapi.com/?i=${id}&apikey=607e47e`  
     const response2 = await fetch(url2);
     const responseJson2 = await response2.json();
     setaboutValue(responseJson2);
